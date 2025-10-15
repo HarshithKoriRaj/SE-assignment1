@@ -1,0 +1,44 @@
+language: python
+python:
+  - "3.12"  # or your Python version
+
+services:
+  - postgresql  # if you're using PostgreSQL
+
+env:
+  global:
+    - DATABASE_URL=postgres://postgres:@localhost/test_db
+
+install:
+  - pip install -r requirements.txt
+  - pip install black flake8 coverage coveralls
+
+before_script:
+  - psql -c 'create database test_db;' -U postgres  # if using PostgreSQL
+
+script:
+  # Check code formatting with black
+  - black --check .
+  
+  # Check with flake8
+  - flake8 --max-line-length=92 --exclude=migrations .
+  
+  # Run tests with coverage
+  - coverage run --source='.' manage.py test
+  - coverage report
+
+after_success:
+  - coveralls
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $AKIAUOZ4EDXHTSNQM7BH
+  secret_access_key: $1/TsqnMEYjewUlOAh29Yz9GS+pzCtSDmt0ImNNT4
+  region: "us-east-1"  # your AWS region
+  app: "project1"
+  env: "se-env"
+  bucket_name: "elasticbeanstalk-us-east-1-306679389647"
+  on:
+    branch: main
+after_success:
+  - COVERALLS_REPO_TOKEN=$COVERALLS_REPO_TOKEN coveralls    
