@@ -1,4 +1,36 @@
-[![Build Status](https://travis-ci.com/YHarshithKoriRaj/SE-assignment1.svg?branch=master)](https://travis-ci.com/YHarshithKoriRaj/SE-assignment1)
-[![Coverage Status](https://coveralls.io/repos/github/YHarshithKoriRaj/SE-assignment1/badge.svg?branch=master)](https://coveralls.io/github/YHarshithKoriRaj/SE-assignment1?branch=master)
-# Testing EB deployment with new permissions
-# CI/CD Testing
+# SE-assignment1
+
+[![Build Status](https://travis-ci.com/HarshithKoriRaj/SE-assignment1.svg?branch=main)](https://travis-ci.com/HarshithKoriRaj/SE-assignment1)
+[![Coverage Status](https://coveralls.io/repos/github/HarshithKoriRaj/SE-assignment1/badge.svg?branch=main)](https://coveralls.io/github/HarshithKoriRaj/SE-assignment1?branch=main)
+
+## Django Polls Application with CI/CD
+
+A Django polls application demonstrating continuous integration and deployment.
+
+### Features
+- ✅ Continuous Integration with Travis CI
+- ✅ Automated testing with PostgreSQL
+- ✅ Code formatting with Black
+- ✅ Linting with Flake8
+- ✅ Code coverage reporting (79%)
+- ✅ Coverage tracking with Coveralls
+- ✅ Automated deployment to AWS Elastic Beanstalk
+
+### Technologies
+- Python 3.12
+- Django
+- PostgreSQL
+- Travis CI
+- AWS Elastic Beanstalk
+- Coveralls
+
+### CI/CD Pipeline
+Every push and pull request automatically:
+1. Checks code formatting with Black
+2. Runs Flake8 linting
+3. Executes test suite with coverage
+4. Reports coverage to Coveralls
+5. Deploys to AWS Elastic Beanstalk on success
+
+### Build Status
+All checks passing ✅
