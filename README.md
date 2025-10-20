@@ -1,7 +1,7 @@
 # SE-assignment1
 
-[![Build Status](https://travis-ci.com/HarshithKoriRaj/SE-assignment1.svg?branch=main)](https://travis-ci.com/HarshithKoriRaj/SE-assignment1)
-[![Coverage Status](https://coveralls.io/repos/github/HarshithKoriRaj/SE-assignment1/badge.svg?branch=main)](https://coveralls.io/github/HarshithKoriRaj/SE-assignment1?branch=main)
+[![Build Status](https://app.travis-ci.com/HarshithKoriRaj/SE-assignment1.svg?token=1AKCfpU9pvpVUchYqqZV&branch=main)](https://app.travis-ci.com/HarshithKoriRaj/SE-assignment1)
+[![Coverage Status](https://coveralls.io/repos/github/HarshithKoriRaj/SE-assignment1/badge.svg?branch=add-readme-badges)](https://coveralls.io/github/HarshithKoriRaj/SE-assignment1?branch=add-readme-badges)
 
 ## Django Polls Application with CI/CD
 
@@ -33,4 +33,5 @@ Every push and pull request automatically:
 5. Deploys to AWS Elastic Beanstalk on success
 
 ### Build Status
-All checks passing ✅
+- All tests passing ✅
+- Code coverage: 79%
