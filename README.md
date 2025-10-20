@@ -1,6 +1,6 @@
 # SE-assignment1
 
-[![Build Status](https://app.travis-ci.com/HarshithKoriRaj/SE-assignment1.svg?token=1AKCfpU9pvpVUchYqqZV&branch=main)](https://app.travis-ci.com/HarshithKoriRaj/SE-assignment1)
+[![Build Status](https://app.travis-ci.com/HarshithKoriRaj/SE-assignment1.svg?token=1AKCfpU9pvpVUchYqqZV&branch=main)](https://app.travis-ci.com/HarshithKoriRaj/SE-assignment1) 
 [![Coverage Status](https://coveralls.io/repos/github/HarshithKoriRaj/SE-assignment1/badge.svg)](https://coveralls.io/github/HarshithKoriRaj/SE-assignment1)
 
 ## Django Polls Application with CI/CD
