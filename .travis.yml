@@ -32,8 +32,8 @@ after_success:
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id: $AKIAUOZ4EDXHTSNQM7BH
-  secret_access_key: $1/TsqnMEYjewUlOAh29Yz9GS+pzCtSDmt0ImNNT4
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
   region: "us-east-1"  # your AWS region
   app: "project1"
   env: "se-env"
